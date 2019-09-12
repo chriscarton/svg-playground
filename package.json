@@ -1,0 +1,34 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple gulp starter kit for integration test",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriscarton/gulp-boilerplate.git"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "html"
+  ],
+  "author": "Chris Carton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chriscarton/gulp-boilerplate/issues"
+  },
+  "homepage": "https://github.com/chriscarton/gulp-boilerplate#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss": "^7.0.18"
+  }
+}
