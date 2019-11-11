@@ -7,6 +7,82 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<h1>Hello, this is a <i>gulp boilerplate</i></h1>
+	<h1>Svg Playground</h1>
+	<p>Du Svg pour le web.</p>
+
+	<svg width="100vw" height="75vh">
+		<circle cx="50" cy="50" r="40" stroke="black" stroke-width="5" fill="yellow"/>
+		<circle id="myCircle"/>
+		<rect width="100px" height="150px" fill="orange" stroke-width="3px" stroke="black" x="250px" y="150px"/>
+		<rect width="50px" height="50px" fill="purple" y="150px" x="475px"/>
+		<rect id="myRect"/>
+		<ellipse cx="800" cy="250" rx="75" ry="100" fill="#996f21"/>
+		<line x1="450" x2="900" y1="240" y2="320" stroke-width="2" stroke="black"/>
+		<!-- points ne peut pas être une propriété css -->
+		<polygon id="myPolygon" points="200,90 300, 10 250,190 160,210"/>
+		<polyline points="20,20 40, 25 60,70 80,50 190, 180" stroke="black" stroke-width="5" fill="none" x="500" y="300"/>
+		<text x="600" y="400" fill="red" transform="rotate(5 10,5)">I love SVG!</text>
+		<text x="800" y="320" style="fill:rgb(67, 177, 177);font-size:20px;font-weight:bold;">Several lines:
+			<tspan x="800" y="350">First line.</tspan>
+			<tspan x="800" y="370">Second line.</tspan>
+		</text>
+	</svg>
+
+
+<div id="Man">
+	<div>
+		<h2>Svg Shapes :</h2>
+		<ul>
+			<li>Rectangle : rect</li>
+			<li>Circle : circle</li>
+			<li>Ellipse : ellipse</li>
+			<li>Line : line</li>
+			<li>Polyline : polyline</li>
+			<li>Polygon : polygon</li>
+			<li>Path : path</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2>Les attributs d'une shape peuvent être définis en css/scss :</h2>
+		<pre>
+			<code>
+$cuteblue:rgb(94, 166, 233);
+
+#myCircle{
+	cx:150;
+	cy:150;
+	fill:$cuteblue;
+	r:50;
+}
+			</code>
+		</pre>
+	</div>
+
+
+	<div>
+		<h2>On peut appliquer des transitions et des pseudo-selecteurs à des shapes svg en css :</h2>
+<pre>
+	<code>
+#myRect{
+	x:600px;
+	y:28px;
+	fill:$coolgreen;
+	width:125px;
+	height:100px;
+	rx:20px;
+	transition:all .5s ease-in;
+	&:hover{
+		fill:darkgreen;
+	}
+}
+	</code>
+</pre>
+	</div>
+
+</div>
+
+
+
 </body>
 </html>
