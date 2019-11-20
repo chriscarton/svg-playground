@@ -2,11 +2,19 @@ $cuteblue:rgb(94, 166, 233);
 $dark:rgb(43, 43, 43);
 $light:rgb(236, 236, 236);
 $coolgreen:rgb(62, 170, 80);
-svg{
-	border:1px dashed red;
-}
+
 body{
 	background-color:rgb(231, 231, 231);
+}
+
+.grid{
+	display:flex;
+}
+
+svg{
+	background-color:white;
+	margin-right:5px;
+	margin-bottom:5px;
 }
 
 .svg-loader{
@@ -25,6 +33,86 @@ body{
 		}
 		to{
 			r:20;
+		}
+	}
+}
+
+
+
+.svg-loader-2{
+	.circ-1{
+		animation-name:contractCirc;
+		animation-duration:1s;
+		animation-iteration-count:infinite;
+	}
+	@keyframes contractCirc{
+		from{
+			r:10;
+		}
+		to{
+			r:5;
+		}
+	}
+	.circ-2{
+		animation-name:expandCirc;
+		animation-duration:1s;
+		animation-iteration-count:infinite;
+	}
+	@keyframes expandCirc{
+		from{
+			r:12;
+		}
+		to{
+			r:20;
+		}
+	}
+}
+
+.svg-loader-3{
+	.circ-1{
+		animation-name:expandCirc;
+		animation-duration:1s;
+		animation-iteration-count:infinite;
+		animation-direction:alternate-reverse;
+	}
+	@keyframes expandCirc{
+		from{
+			r:5;
+		}
+		to{
+			r:10;
+		}
+	}
+	.circ-2{
+		animation-name:Ripples;
+		animation-duration:1s;
+		animation-iteration-count:infinite;
+		animation-delay:.5s;
+	}
+	@keyframes Ripples{
+		from{
+			r:10;
+			opacity:1;
+		}
+		to{
+			r:20;
+			opacity:0;
+		}
+	}
+	.circ-3{
+		animation-name:Ripples2;
+		animation-duration:1s;
+		animation-iteration-count:infinite;
+		animation-delay:.5s;
+	}
+	@keyframes Ripples2{
+		from{
+			r:15;
+			opacity:1;
+		}
+		to{
+			r:25;
+			opacity:0;
 		}
 	}
 }
